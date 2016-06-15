@@ -1,0 +1,417 @@
+body{
+	min-height: 1000;
+	font-family: "microsoft yahei";
+}
+.header-wrapper{
+	min-width: 1000px;
+}
+.register-wrapper{
+	width: 100%;
+	background-color: #dcdcdc;
+	margin-bottom: 30px;
+}
+.register{
+	width: 1000px;
+	height: 30px;
+	margin: 0 auto;
+}
+.register-wrapper{
+	line-height: 30px;
+}
+.register h1{
+	display: inline-block;
+	font-size: 12px;
+	color: #898989;
+}
+.register span,
+.collection span{
+	display: inline-block;
+}
+.icons{
+	background: url(../images/icons.png) no-repeat center center;
+}
+.icons-home{
+	width: 14px;
+	height: 12px;
+	background-position: 0 0;
+	margin-right: 5px;
+}
+.icons-sina{
+	width: 25px;
+	height: 22px;
+	background-position: -30px 0;
+}
+.icons-qq{
+	width: 25px;
+	height: 22px;
+	background-position: -60px 0;
+}
+.icons-coll{
+	width: 8px;
+	height: 22px;
+	background-position: -90px 0;
+}
+.register-links-wrapper{
+	display: inline-block;
+	float: right;
+}
+.register-links li{
+	display: inline-block;
+}
+.register-links li a{
+	color: #34bf82;
+}
+.login:after{
+	content :"|";
+	color: #34bf82;
+}
+
+
+.search-wrapper{
+	width: 1000px;
+	height: 70px;
+	margin: 0 auto;
+}
+.search{
+	display: inline-block;
+	margin-left: 223px;
+}
+.search-input{
+	width: 445px;
+	height: 32px;
+	border: 2px solid #34bf82;
+	float: left;
+}
+.search a{
+	display: inline-block;
+	width: 83px;
+	height: 38px;
+	background-color: #34bf82;
+	color: #fff;
+	text-align: center;
+	line-height: 38px;
+	font-size: 16px;
+}
+.collection{
+	display: inline-block;
+	float: right;
+	width: 130px;
+	height: 36px;
+	border: 1px solid #898989;
+	background-color: #dcdcdc;
+	line-height: 36px;
+}
+.collection span{
+	padding-left: 40px;
+}
+
+
+.navigation{
+	width: 100%;
+	height: 42px;
+	background-color: #34bf82;
+}
+.navigate{
+	width: 1220px;
+	height: inherit;
+	margin:0 auto;
+	margin-left: 120px;
+}
+.navigate li{
+	float: left;
+	list-style: none;
+	font-size: 16px;
+}
+.navigate li a{
+	display: inline-block;
+	width: 100px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	color: #fff;
+}
+.navigate li a:hover{
+	background-color: #28b577;
+}
+
+/*   S    轮播图   */ 
+.slider{
+	width: 100%;
+	height: 460px;
+	overflow: hidden;
+	margin-bottom: 58px;
+}
+.slider img{
+	display: block;
+	width: 100%;
+}
+/*   E    轮播图   */ 
+
+
+/*   S    主题内容   */
+
+.show{
+	width: 1000px;
+	height: 602px;
+	margin: 0 auto;
+	margin-bottom: 58px;
+}
+.show h2.title{
+	font-size: 22px;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 27px;
+}
+.main a{
+	display: inline-block;
+	overflow: hidden;
+}
+.imgs-left,
+.imgs-right{
+	display: inline-block;
+}
+.imgs-left,
+.show-big{
+	width: 63%;
+}
+.imgs-right,
+.show-small{
+	width: 35.4%;
+}
+.imgs-left,
+.show-image-left{
+	float: left;
+}
+.imgs-right,
+.show-image-right{
+	float: right;
+}
+.show-special,
+.show-next,
+.imgs-top,
+.imgs-bottom{
+	width: 100%;
+	height: 320px;
+	margin-bottom: 16px;
+}
+.show-next,
+.show-last{
+	width: 100%;
+	height: 270px;
+}
+.show-moutain{
+	width: 49%;
+	height:215px;
+}
+.show-last{
+	width: 100%;
+	height: 265px;
+}
+.show-image-left{
+	float: left;
+}
+.show-image-right{
+	float: right;
+}
+
+.tips{
+	width: 100%;
+	height: 269px;
+}
+.imgs-longger{
+	width: 67%;
+}
+.imgs-smaller{
+	width: 32%
+}
+.show-big,
+.show-small,
+.imgs-half{
+	height: 266px;
+}
+.imgs-third{
+	width: 100%;
+	height: 172px;
+}
+
+
+.history{
+	width: 1000px;
+	height: 270px;
+	margin: 0 auto;
+}
+.history .tabs{
+	height: 28px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 25px;
+}
+.history .tabs li,
+.history-links-wrapper li{
+	float: left;
+	margin-right: 20px;
+}
+.history .tabs li a{
+	margin-bottom: 2px solid #28b577;
+}
+.history .tabs li a{
+	font-size: 16px;
+	color: #000;
+}
+.history .tabs li .visited{
+	color: #28b577;
+}
+.history-links-wrapper li{
+	margin-right: 13px;
+}
+.history-links-wrapper{
+	clear: both;
+}
+
+.history-links{
+	display: inline-block;
+	width: 155px;
+	height: 155px;
+	background: url(../images/history.png) no-repeat;
+}
+.links-game{
+	background-position: 0 0;
+}
+.links-flower{
+	background-position: -169px 0;
+}
+.links-park{
+	background-position: -338px 0;
+}
+.links-sport{
+	background-position: -507px 0;
+}
+.links-stadium{
+	background-position: -676px 0;
+}
+.links-rabit{
+	background-position: -845px 0;
+}
+
+/*   E    主题内容   */
+
+
+
+/*   S    页脚   */  
+.footer-wrapper{
+	clear: both;
+	width: 100%;
+	margin-top: 35px;
+	background-color: #2f2f2f;
+	border-top: 2px solid #9e8841;
+	display: inline-block;
+}
+.footer-menu,
+.coporation{
+	width: 1170px;
+	margin: 0 auto;
+	clear: both;
+}
+.footer-menu dl{
+	float: left;
+	margin-bottom: 68px;
+	margin-left: 64px;
+}
+.footer-menu dl a{
+	color: #6d6b6b;
+}
+.footer-menu dl a:hover{
+	text-decoration: underline;
+}
+.footer-list dt{
+	font-size:14px;
+	color: #a5a5a5;
+	margin-top: 65px;
+	margin-bottom: 40px;
+}
+.footer-list dt a{
+	font-size: 16px;
+	color: #fff;
+}
+.footer-list dd{
+	font-size: 12px;
+	line-height: 9px;
+	margin-top: 24px;
+}
+
+.qrcode{
+	width: 190px;
+	height: 180px;
+	float: left;
+	margin-top: 49px;
+	margin-left: 230px;
+}
+.qrcode p{
+	font-size: 12px;
+	color: #6d6b6b;
+}
+
+.coporation{
+	clear: both;
+	height: 100px;
+	border-top: 1px solid #6d6b6b; 
+}
+.coporation p{
+	position: relative;
+	top: -10px;
+	color: #fff;
+	text-align: center;
+	z-index: 10;
+}
+.friendlinks li{
+	width: 115px;
+	height: 34px;
+	float: left;
+	margin-right: 16.8px;
+}
+.friendlinks li:last-child,
+.history-links-wrapper li:last-child{
+	margin-right: 0;
+}
+.links{
+	display: inline-block;
+	width: 120px;
+	height: 32px;
+	background: url(../images/friendlinks.png) no-repeat;
+}
+.links-yidao{
+	background-position: 0 0;
+}
+.links-zima{
+	background-position: -132px 0;
+}
+.links-quna{
+	background-position: -264px 0;
+}
+.links-running{
+	background-position: -396px 0;
+}
+.links-xmic{
+	background-position: -528px 0;
+}
+.links-gzg{
+	background-position: -660px 0;
+}
+.links-dz{
+	background-position: -792px 0;
+}
+.links-hs{
+	background-position: -924px 0;
+}
+.links-ltgl{
+	background-position: -1056px 0;
+}
+
+.address{
+	clear: both;
+	font-size: 12px;	
+	text-align: center;
+	line-height: 39px;
+	color: #6d6b6b;
+	border-top: 1px solid #6d6b6b;
+}
+/*   E    页脚   */
