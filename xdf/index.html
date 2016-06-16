@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>爱丽丝环游世界</title>
+		<title>爱丽丝旅游</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="style/reset.css">
 		<link rel="stylesheet" href="style/style.css">
@@ -13,13 +13,13 @@
 
 			<div class="register-wrapper">
 				<div class="register">
-					<h1><span class="icons icons-home"></span>爱丽丝旅游网站首页！</h1>
+					<h1><span class="icons icons-home"></span>XXX网站首页！</h1>
 					<div class="register-links-wrapper">
 						<ul class="register-links">
 							<li class="icons icons-sina"></li>
 							<li class="icons icons-qq"></li>
-							<li class="login" ><a href="#">登录</a></li>	
-							<li class="regis" ><a href="#">注册</a></li>
+							<li class="login"><a href="#">登录</a></li>	
+							<li class="regis"><a href="#">注册</a></li>
 						</ul>
 					</div>
 				</div>
@@ -55,9 +55,48 @@
 
 			<!-- ==S  轮播图 -->
 			<div class="slider">
-				<img src="images/slider.jpg" />
+				<img src="images/slider.jpg" style="z-index:20;" />
 
-				<div></div>
+				<div class="info-search">
+					<ul class="v-tabs">
+						<li><a href="#">行程规划</a></li>
+						<li><a href="#">目的地</a></li>
+						<li><a href="#">机票</a></li>
+						<li><a href="#">火车</a></li>
+						<li><a class="v-visited" href="#">酒店</a></li>
+						<li><a href="#">门票</a></li>
+					</ul>
+					<div class="v-search">
+						<ul class="comment-search">
+							<li>
+								<label class="special-spacing">目的地</label>
+								<input type="text" name="course" />
+							</li>
+							<li>
+								<label>酒店级别</label>
+								<input type="text" name="course" />
+								<span class="triangle"></span>
+							</li>
+							<li>
+								<label class="special-spacing">关键词</label>
+								<input type="text" name="course"  placeholder=" 酒店名/地标/商圈/"/>
+							</li>
+						</ul>
+						<ul class="time-search">
+							<li>
+								<label>入住时间</label>
+								<input type="text" name="course" />
+								<span class="icons icons-time"></span>
+							</li>
+							<li>
+								<label>退房时间</label>
+								<input type="text" name="course" />
+								<span class="icons icons-time"></span>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
 			</div>
 			<!-- ==E  轮播图 -->
 		</header>
@@ -68,25 +107,63 @@
 			<div class="show">
 				<h2 class="title">热门行程</h2>
 				<ul class="imgs-left">
-					<li><a class="show-special"  href="#"><img src="images/xm.jpg"></a></li>
-					<li><a class="show-moutain show-image-left" href="#"><img src="images/sb.jpg"></a></li>
-					<li><a class="show-moutain show-image-right" href="#"><img src="images/wds.jpg"></a></li>
+					<li>
+						<a class="show-special"  href="#"><img src="images/xm.jpg"></a>
+						<article>
+							<p class="summary">厦门三日游</p>
+							<p>三日/2400人引用</p>
+							<a href="#">小哈/《我的浪漫厦门之旅》</a>
+						</article>
+					</li>
+					<li class="show-moutain show-image-left">
+						<a href="#"><img src="images/sb.jpg"></a>
+						<p class="imgs-title">陕北四日游</p>
+					</li>
+					<li class="show-moutain show-image-right">
+						<a href="#"><img src="images/wds.jpg"></a>
+						<p class="imgs-title">武当山四日游</p>
+					</li>
 				</ul>
 				<ul class="imgs-right">
-					<li><a class="show-next" href="#"><img src="images/ah.jpg"></a></li>
-					<li><a class="show-last" href="#"><img src="images/hz02.jpg"></a></li>
+					<li class="show-next">
+						<a href="#"><img src="images/ah.jpg"></a>
+						<p class="imgs-title">安徽四日游</p>
+					</li>
+					<li class="show-last">
+						<a href="#"><img src="images/hz02.jpg"></a>
+						<p class="imgs-title">杭州六日游</p>
+					</li>
 				</ul>				
 			</div>
 
 			<div class="show">
 				<h2 class="title">发现好游记</h2>
 				<ul class="tips imgs-top">
-					<li><a class="show-big show-image-left" href="#"><img src="images/ayada.jpg"></a></li>
-					<li><a class="show-small show-image-right" href="#"><img src="images/sh.jpg"></a></li>
+					<li class="show-big show-image-left">
+						<a href="#"><img src="images/ayada.jpg"></a>
+						<div class="describe">
+							<article>
+								<p class="summary">在Ayada变成印度洋的一粒沙</p>
+								<p>小哈</p>
+								<a href="#">111人已阅读</a>
+							</article>
+						</div>
+						
+					</li>
+					<li class="show-small show-image-right">
+						<a href="#"><img src="images/sh.jpg"></a>
+						<p class="imgs-title">上海</p>
+					</li>
 				</ul>
 				<ul class="tips imgs-bottom">
-					<li><a class="show-small show-image-left" href="#"><img src="images/alone.jpg"></a></li>
-					<li><a class="show-big show-image-right" href="#"><img src="images/fire.jpg"></a></li>
+					<li class="show-small show-image-left">
+						<a href="#"><img src="images/alone.jpg"></a>
+						<p class="imgs-title">一辆车一条大北线</p>
+					</li>
+					<li class="show-big show-image-right">
+						<a href="#"><img src="images/fire.jpg"></a>
+						<p class="imgs-title">火山岛三日游</p>
+					</li>
 				</ul>
 			</div>
 
@@ -94,35 +171,120 @@
 				<h2 class="title">旅行目的地</h2>
 				<ul class="imgs-left imgs-longger">
 					<ul class="tips imgs-top">
-						<li><a class="show-moutain show-image-left imgs-half" href="#"><img src="images/xm2.jpg"></a></li>
-						<li><a class="show-moutain show-image-right imgs-half" href="#"><img src="images/xian01.jpg"></a></li>
+						<li class="show-moutain show-image-left imgs-half">
+							<a href="#"><img src="images/xm2.jpg"></a>
+							<div class="describe">
+								<article>
+									<p class="summary">厦门</p>
+									<a href="#">厦门一带以花岗岩为主要岩石，故山体多呈浑
+												圆形，山上多怪石奇岩，坡上多花草林木，降
+												水丰沛，山中多流泉飞瀑，依山濒海…</a>
+								</article>
+							</div>
+						</li>
+						<li class="show-moutain show-image-right imgs-half">
+							<a href="#"><img src="images/xian01.jpg"></a>
+							<p class="imgs-title">西安</p>
+						</li>
 					</ul>
 					<ul class="tips imgs-bottom">
-						<li><a class="show-moutain show-image-left imgs-half" href="#"><img src="images/dl.jpg"></a></li>
-						<li><a class="show-moutain show-image-right imgs-half" href="#"><img src="images/xian02.jpg"></a></li>
+						<li class="show-moutain show-image-left imgs-half">
+							<a href="#"><img src="images/dl.jpg"></a>
+							<p class="imgs-title">大理</p>
+						</li>
+						<li class="show-moutain show-image-right imgs-half">
+							<a href="#"><img src="images/xian02.jpg"></a>
+							<p class="imgs-title">西安</p>
+						</li>
 					</ul>
 				</ul>
 				<ul class="imgs-right imgs-smaller">
-					<li><a class="show-next imgs-third"  href="#"><img src="images/hz.jpg"></a></li>
-					<li><a class="show-next imgs-third" href="#"><img src="images/hz.jpg"></a></li>
-					<li><a class="show-next imgs-third" href="#"><img src="images/anhui.jpg"></a></li>
+					<li class="show-next imgs-third">
+						<a  href="#"><img src="images/hz.jpg"></a>
+						<p class="imgs-title">西藏</p>
+					</li>
+					<li class="show-next imgs-third">
+						<a href="#"><img src="images/hz.jpg"></a>
+						<p class="imgs-title">杭州</p>
+					</li>
+					<li class="show-next imgs-third">
+						<a href="#"><img src="images/anhui.jpg"></a>
+						<p class="imgs-title">安徽</p>
+					</li>
 				</ul>
 			</div>
 
+			<!-- S 浏览历史 猜你喜欢 -->
 			<div class="history">
 	        	<ul class="tabs">
 	        		<li><a href="#">猜你喜欢</a></li>
 	        		<li><a class="visited" href="#">浏览历史</a></li>
 	        	</ul>
 		        <ul class="history-links-wrapper">
-		        	<li><a class="history-links links-game" href="#"></a></li>
-		        	<li><a class="history-links links-flower" href="#"></a></li>
-		        	<li><a class="history-links links-park" href="#"></a></li>
-		        	<li><a class="history-links links-sport" href="#"></a></li>
-		        	<li><a class="history-links links-stadium" href="#"></a></li>
-		        	<li><a class="history-links links-rabit" href="#"></a></li>
+		        	<li>
+		        		<a class="history-links links-game" href="#"></a>
+		        		<div class="info">
+							<article>
+								<p class="scenery">天柱山森林公园</p>
+								<p>厦门4A级景区</p>
+								<a href="#">￥159</a>
+							</article>
+						</div>
+		        	</li>
+		        	<li>
+		        		<a class="history-links links-flower" href="#"></a>
+		        		<div class="info">
+							<article>
+								<p class="scenery">天柱山森林公园</p>
+								<p>厦门4A级景区</p>
+								<a href="#">￥159</a>
+							</article>
+						</div>
+		        	</li>
+		        	<li>
+		        		<a class="history-links links-park" href="#"></a>
+		        		<div class="info">
+							<article>
+								<p class="scenery">天柱山森林公园</p>
+								<p>厦门4A级景区</p>
+								<a href="#">￥159</a>
+							</article>
+						</div>
+		        	</li>
+		        	<li>
+		        		<a class="history-links links-sport" href="#"></a>
+		        		<div class="info">
+							<article>
+								<p class="scenery">天柱山森林公园</p>
+								<p>厦门4A级景区</p>
+								<a href="#">￥159</a>
+							</article>
+						</div>
+		        	</li>
+		        	<li>
+		        		<a class="history-links links-stadium" href="#"></a>
+		        		<div class="info">
+							<article>
+								<p class="scenery">天柱山森林公园</p>
+								<p>厦门4A级景区</p>
+								<a href="#">￥159</a>
+							</article>
+						</div>
+		        	</li>
+		        	<li>
+		        		<a class="history-links links-rabit" href="#"></a>
+		        		<div class="info">
+							<article>
+								<p class="scenery">天柱山森林公园</p>
+								<p>厦门4A级景区</p>
+								<a href="#">￥159</a>
+							</article>
+						</div>
+		        	</li>
 		        </ul>
-	        </div>		</main>
+	        </div>
+	        <!-- S 浏览历史 猜你喜欢 -->
+	    </main>
 		<!-- ==E  body -->
 
 		<!-- ==S  footer -->
@@ -130,7 +292,12 @@
 			<div class="footer-menu">
 				<div class="qrcode">
 	            	<img src="images/qrcode.jpg" />
-	            	<p>关注公众号，获取更多服务<br/>服务热线：0592-XXXXXXXXX</p>
+	            		<div class="info" style="width:180px; margin-top:10px;text-align:center;">
+							<article>
+								<p class="scenery">关注公众号，获取更多服务</p>
+								<p>服务热线：0592-XXXXXXXXX</p>
+							</article>
+						</div>
 	        	</div>	
 
 				<div class="footer-list">
@@ -180,11 +347,24 @@
 		        	<li><a class="links links-ltgl" href="#"></a></li>
 		        </ul>
 	        </div>
-	        
 
-	        <div class="address">
-                 	<p>Copyright 2011-2013 版权所有 厦门XXXXX有限公司闽ICP备 14006003号</p>
-            	</div>
+	        <div class="bottom">
+	        	<div class="last-links">
+	        		<ul>
+		        		<li><a href="#">关于XX</a></li>
+		        		<li class="rule"><a href="#">联系XX</a></li>
+		        	</ul>		
+		        	<ul>
+		        		<li class="rule"><a href="#">诚聘英才</a></li>
+		        		<li class="rule"><a href="#">友情链接</a></li>
+		        	</ul>
+	        	</div>
+		        <div class="address">
+	                <p>Copyright 2011-2013 版权所有 厦门XXXXX有限公司闽ICP备 14006003号</p>
+	            </div>
+	        </div>
+	        
+	        
 		</footer>
 		<!-- ==E  footer -->
 	</body>

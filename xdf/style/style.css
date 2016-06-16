@@ -5,6 +5,8 @@ body{
 .header-wrapper{
 	min-width: 1000px;
 }
+
+/* register 头部最顶层*/
 .register-wrapper{
 	width: 100%;
 	background-color: #dcdcdc;
@@ -27,7 +29,9 @@ body{
 .collection span{
 	display: inline-block;
 }
+/* S 导入小图标 */
 .icons{
+	display: inline-block;
 	background: url(../images/icons.png) no-repeat center center;
 }
 .icons-home{
@@ -47,26 +51,41 @@ body{
 	background-position: -60px 0;
 }
 .icons-coll{
-	width: 8px;
+	width: 10px;
 	height: 22px;
 	background-position: -90px 0;
 }
+.icons-time{
+	position: relative;
+	top: -25px;
+	left: 240px;
+	width: 20px;
+	height: 20px;
+	background-position: -120px 0;
+}
+/* E 导入小图标 */
+
+/*  头部顶层的链接  */
 .register-links-wrapper{
 	display: inline-block;
 	float: right;
 }
 .register-links li{
 	display: inline-block;
+	margin-right: 5px;
 }
 .register-links li a{
+	display: inline-block;
+	font-size: 12px;
 	color: #34bf82;
+	margin-left: 5px;
 }
-.login:after{
+.register-links li:last-child:before{
 	content :"|";
 	color: #34bf82;
 }
 
-
+/*  S 查询框 及其收藏夹 */
 .search-wrapper{
 	width: 1000px;
 	height: 70px;
@@ -97,15 +116,17 @@ body{
 	float: right;
 	width: 130px;
 	height: 36px;
-	border: 1px solid #898989;
-	background-color: #dcdcdc;
+	border: 1px solid #ddd;
+	background-color: #eee;
 	line-height: 36px;
+	padding: 10px 0 0 10px;
 }
 .collection span{
 	padding-left: 40px;
 }
+/*  E 查询框 及其收藏夹 */
 
-
+/*  S 导航栏  */
 .navigation{
 	width: 100%;
 	height: 42px;
@@ -133,9 +154,11 @@ body{
 .navigate li a:hover{
 	background-color: #28b577;
 }
+/*  S 导航栏  */
 
 /*   S    轮播图   */ 
 .slider{
+	position: relative;
 	width: 100%;
 	height: 460px;
 	overflow: hidden;
@@ -145,18 +168,94 @@ body{
 	display: block;
 	width: 100%;
 }
+
+/* S 轮播图上的条件查询框 */
+.info-search{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 723px;
+	height: 320px;
+	z-index: 50px;
+}
+.info-search .v-tabs{
+	float: left;
+	width: 90px;
+	height: inherit;
+	background-color: #34bf82;
+}
+.v-tabs li{
+	width: 100%;
+	height: 53px;
+	line-height: 53px;
+	text-align: center;
+}
+.v-tabs li a{
+	display: inline-block;
+	width: 95%;
+	height: 95%;
+	font-weight: bold;
+	color: #fff;
+	margin-left: 5px;
+}
+.v-tabs .v-visited{  /*正在查询的块*/
+	color: #34bf82;
+	background-color: #fff;
+}
+.v-search{
+	float: right;
+	width: 633px;
+	height: inherit;
+	background-color: rgba(255,255,255,.9);
+}
+.comment-search, /*普通条件查询和时间查询*/
+.time-search{
+	float: left;
+	box-sizing:border-box;
+	width: 50%;
+	padding: 50px 0 0 30px;
+}
+.triangle{  /*小三角形*/
+	position: relative;
+	top: 0;
+	left: -23px;
+	display: inline-block;
+	width: 12px;
+	height: 7px;
+	background:url(../images/triangle.png) no-repeat;
+}
+.time-search{
+	float: right;
+}
+.v-search ul li{
+	margin-bottom: 30px;
+}
+.v-search ul li label{
+	font-size: 16px;
+	font-weight: bold;
+}
+.special-spacing{
+	letter-spacing: 6px;
+}
+.v-search ul li input{
+	width: 190px;
+	height: 28px;
+	font-size: 14px;
+}
+/*  E 轮播图上的条件查询框 */
 /*   E    轮播图   */ 
 
 
 /*   S    主题内容   */
 
-.show{
+.show{  /*每一哥主题块的外围样式设置*/
 	width: 1000px;
 	height: 602px;
 	margin: 0 auto;
 	margin-bottom: 58px;
 }
-.show h2.title{
+.show h2.title{  /*每个主题块的主题*/
 	font-size: 22px;
 	font-weight: normal;
 	text-align: center;
@@ -166,16 +265,21 @@ body{
 	display: inline-block;
 	overflow: hidden;
 }
-.imgs-left,
-.imgs-right{
+.show a{
+	width: 100%;
+	height: inherit;
+}
+
+.imgs-left, /*左边部分*/
+.imgs-right{  /*右边部分*/
 	display: inline-block;
 }
 .imgs-left,
-.show-big{
+.show-big{  /*发现好游记 图片较大部分*/
 	width: 63%;
 }
 .imgs-right,
-.show-small{
+.show-small{ /*发现好游记 图片较大小部分*/
 	width: 35.4%;
 }
 .imgs-left,
@@ -186,8 +290,8 @@ body{
 .show-image-right{
 	float: right;
 }
-.show-special,
-.show-next,
+.show-special, /*和其他不同的图片，基本是每一块的第一张*/
+.show-next, /*每一块第一行的第二章图片*/
 .imgs-top,
 .imgs-bottom{
 	width: 100%;
@@ -195,52 +299,46 @@ body{
 	margin-bottom: 16px;
 }
 .show-next,
-.show-last{
+.show-last{ /*每一块的右下角图片*/
 	width: 100%;
 	height: 270px;
 }
-.show-moutain{
+.show-moutain{   /*两列排的图片设置相同的宽*/
 	width: 49%;
 	height:215px;
 }
 .show-last{
 	width: 100%;
-	height: 265px;
-}
-.show-image-left{
-	float: left;
-}
-.show-image-right{
-	float: right;
+	height: 268px;
 }
 
-.tips{
+.tips{  /*为发现好游记特定设置的，宽为100%*/
 	width: 100%;
 	height: 269px;
 }
-.imgs-longger{
+.imgs-longger{ /*图片较长的*/
 	width: 67%;
 }
-.imgs-smaller{
+.imgs-smaller{ /*图片较小的*/
 	width: 32%
 }
 .show-big,
 .show-small,
-.imgs-half{
+.imgs-half{ /*各占一半大小的图片*/
 	height: 266px;
 }
-.imgs-third{
+.imgs-third{  /*旅行目的地中右边 三行排列*/
 	width: 100%;
-	height: 172px;
+	height: 173px;
 }
 
-
+/*  S  历史记录和猜你喜欢  */
 .history{
 	width: 1000px;
 	height: 270px;
 	margin: 0 auto;
 }
-.history .tabs{
+.history .tabs{  /*上面的选项卡：历史记录 猜你喜欢*/
 	height: 28px;
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 25px;
@@ -251,13 +349,10 @@ body{
 	margin-right: 20px;
 }
 .history .tabs li a{
-	margin-bottom: 2px solid #28b577;
-}
-.history .tabs li a{
 	font-size: 16px;
 	color: #000;
 }
-.history .tabs li .visited{
+.history .tabs li .visited{  /*选项卡中选中部分*/
 	color: #28b577;
 }
 .history-links-wrapper li{
@@ -266,12 +361,12 @@ body{
 .history-links-wrapper{
 	clear: both;
 }
-
-.history-links{
+.history-links{  /*历史记录图片 变化的东西 应该用图片导入的，不该用背景图*/
 	display: inline-block;
 	width: 155px;
 	height: 155px;
 	background: url(../images/history.png) no-repeat;
+	margin-bottom: 10px;
 }
 .links-game{
 	background-position: 0 0;
@@ -291,6 +386,69 @@ body{
 .links-rabit{
 	background-position: -845px 0;
 }
+/*  S  历史记录和猜你喜欢  */
+
+/*   S  图片上的 文字处理  */
+.show li{
+	position: relative;
+}
+.describe{  /*简介或者描述*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: inherit;
+	background-color: rgba(0,0,0,.3);
+}
+.show article{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 284px;
+	height: 114px;
+	transform: translate(-50%, -50%);
+	font-size: 14px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	opacity: .8;
+}
+.show article .summary{
+	font-size: 20px;
+}
+.show article a{
+	color: #fff;
+}
+.show article a:hover{
+	text-decoration: underline;
+}
+.imgs-title{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 100%;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	opacity: .8;
+	box-shadow: inset 0 40px rgba(0,0,0,.2);
+}
+
+.info{  /*简单的城市信息*/
+	width: 155px;
+	height: 60px;
+}
+.info article{
+	font-size: 11.6px;
+	line-height: 16px;
+	margin-left: 10px;
+}
+.info a{
+	color: #ff6000;
+	font-size: 14.9px;
+}
+/*   E   文字处理  */
 
 /*   E    主题内容   */
 
@@ -338,7 +496,7 @@ body{
 	margin-top: 24px;
 }
 
-.qrcode{
+.qrcode{ /*二维码*/
 	width: 190px;
 	height: 180px;
 	float: left;
@@ -350,19 +508,24 @@ body{
 	color: #6d6b6b;
 }
 
-.coporation{
+.coporation{ /*合作伙伴*/
 	clear: both;
-	height: 100px;
+	height: 70px;
 	border-top: 1px solid #6d6b6b; 
 }
 .coporation p{
 	position: relative;
 	top: -10px;
+	left: 50%;
+	transform:translate(-50%, 0);
+	width: 100px;
+	height: 20px;
+	background-color: #2f2f2f;
 	color: #fff;
 	text-align: center;
 	z-index: 10;
 }
-.friendlinks li{
+.friendlinks li{  /*友情链接*/
 	width: 115px;
 	height: 34px;
 	float: left;
@@ -372,6 +535,8 @@ body{
 .history-links-wrapper li:last-child{
 	margin-right: 0;
 }
+
+/*  S 友情链接 */
 .links{
 	display: inline-block;
 	width: 120px;
@@ -405,13 +570,52 @@ body{
 .links-ltgl{
 	background-position: -1056px 0;
 }
+/*  S 友情链接 */
 
+.bottom{
+	padding-top: 20px;
+	background-color: #282828;
+}
 .address{
 	clear: both;
+	width: 600;
+	height: 20px;
 	font-size: 12px;	
+	line-height: 20px;
 	text-align: center;
-	line-height: 39px;
-	color: #6d6b6b;
-	border-top: 1px solid #6d6b6b;
+	letter-spacing: 2px;
+	color: #aaa;
+	margin: 0 auto;
+	padding-bottom: 20px;
 }
+.last-links{
+	text-align: center;
+	width: 350px;
+	height: 20px;
+	margin: 0 auto;
+}
+.last-links ul{
+	display: inline-block;
+	width: 150px;
+	height: inherit;
+	margin-right: 20px;
+}
+.last-links ul:last-child{
+	margin-right: 0;
+}
+.last-links ul li{
+	float: left;
+	margin-left: 15px;
+	font-size: 12px;
+}
+.last-links ul li a{
+	font-size: 12px;
+	color: #aaa;
+	padding-left: 5px;
+}
+.rule:before{
+	content: "|";
+	color: #aaa;
+}
+
 /*   E    页脚   */
