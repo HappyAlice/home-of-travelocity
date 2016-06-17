@@ -26,8 +26,11 @@ body{
 	color: #898989;
 }
 .register span,
-.collection span{
+.register a,
+.collection span,
+.collection a{
 	display: inline-block;
+	vertical-align: middle;
 }
 /* S 导入小图标 */
 .icons{
@@ -36,7 +39,7 @@ body{
 }
 .icons-home{
 	width: 14px;
-	height: 12px;
+	height: 16px;
 	background-position: 0 0;
 	margin-right: 5px;
 }
@@ -51,7 +54,7 @@ body{
 	background-position: -60px 0;
 }
 .icons-coll{
-	width: 10px;
+	width: 25px;
 	height: 22px;
 	background-position: -90px 0;
 }
@@ -73,6 +76,7 @@ body{
 .register-links li{
 	display: inline-block;
 	margin-right: 5px;
+	vertical-align: middle;
 }
 .register-links li a{
 	display: inline-block;
@@ -119,10 +123,10 @@ body{
 	border: 1px solid #ddd;
 	background-color: #eee;
 	line-height: 36px;
-	padding: 10px 0 0 10px;
 }
+
 .collection span{
-	padding-left: 40px;
+	margin: 0 10px 0 10px;
 }
 /*  E 查询框 及其收藏夹 */
 
@@ -242,6 +246,18 @@ body{
 	width: 190px;
 	height: 28px;
 	font-size: 14px;
+}
+.v-search a{
+	display: inline-block;
+	width: 194px;
+	height: 40px;
+	background-color: #ff6000;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	border-radius: 3px;
+	float: right;
+	margin-right: 20px;
 }
 /*  E 轮播图上的条件查询框 */
 /*   E    轮播图   */ 
